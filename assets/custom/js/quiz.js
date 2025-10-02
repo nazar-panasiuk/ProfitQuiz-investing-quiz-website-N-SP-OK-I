@@ -55,12 +55,12 @@ const $container = document.getElementById('container');
 const startStep = {
     render: () => {
         $container.innerHTML = `
-  <div class="container quiz-wrapper">
+<div class="container quiz-wrapper">
     <div class="quiz-content">
         <div class="content">
             <img class="quiz-image" src="assets/custom/images/bg1.png"/>
             <h2 class="title">Интерактивное обучение инвестициям</h2>
-            <h5 class="text">Узнайте, насколько вы разбираетесь в стратегиях инвестирования, управлении рисками и финансовом планировании — с этим увлекательным и познавательным обучением.</h5>
+            <h5 class="text">Пошаговое обучение инвестированию — от первых знаний до уверенной работы на рынке. Программа раскрывает ключевые основы и формирует практические умения, необходимые для успешного развития в сфере инвестиций.</h5>
             <div class="contact-wrapper">
                 <div class="my-3 icons-wrapper">
                     <span
@@ -77,6 +77,7 @@ const startStep = {
         </div>
     </div>
 </div>
+
 
 
       `;
