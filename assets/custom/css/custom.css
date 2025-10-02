@@ -3660,6 +3660,13 @@ header h2 {
     border-radius: 10px;
 }
 
+@media (max-width: 992px) {
+    .quiz-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
 .quiz-content .title {
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -3712,6 +3719,12 @@ header h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 992px) {
+    .icons-wrapper {
+        justify-content: flex-start;
+    }
 }
 
 .icons-wrapper span {
@@ -3783,6 +3796,8 @@ header h2 {
     border-radius: 10px !important;
     background: rgba(255, 255, 255, 0.05) !important;
 }
+
+
 
 .quiz-content .answers .answer:first-child {
     visibility: visible;
