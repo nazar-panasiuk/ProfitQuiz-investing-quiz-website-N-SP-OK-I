@@ -3741,6 +3741,9 @@ header h2 {
     background-color: #F2AA4CFF;
     border-color: #F2AA4CFF;
 }
+
+
+
 .quiz-content .first-button:hover {
     background-color: white;
     color: #F2AA4CFF;
@@ -3757,6 +3760,12 @@ header h2 {
     color: #fff;
     width: 50% !important;
     padding: 10px 0px !important;
+}
+
+@media (max-width: 992px) {
+    .quiz-content .first-button {
+        width: 100% !important;
+    }
 }
 
 @media (max-width: 540px) {
