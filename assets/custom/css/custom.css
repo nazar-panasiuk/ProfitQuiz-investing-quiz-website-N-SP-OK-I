@@ -3630,6 +3630,12 @@ header h2 {
     }
 }
 
+@media (max-width: 992px) {
+    .answer {
+width: 100% !important;
+    }
+}
+
 .content {
     text-align: center;
     width: 80%;
