@@ -1,50 +1,51 @@
 const QUESTIONS = [
     {
-        label: 'Что необходимо понять перед тем, как начинать инвестиции?',
+        label: 'Was sollte man verstehen, bevor man mit Investitionen beginnt?',
         answers: [
-            'Сформулировать чёткий финансовый план',
-            'Следовать советам без анализа',
-            'Делать вложения только потому, что так поступают другие',
-            'Инвестировать вслепую без оценки рисков',
+            'Einen klaren Finanzplan formulieren',
+            'Ratschlägen folgen, ohne sie zu analysieren',
+            'Investieren, nur weil es andere tun',
+            'Blind investieren, ohne Risiken zu bewerten',
         ],
     },
     {
-        label: 'Какие вложения чаще всего считаются более надёжными в долгосрочной перспективе?',
+        label: 'Welche Anlagen gelten in der Regel als zuverlässiger auf lange Sicht?',
         answers: [
-            'Разнообразный портфель с минимальным риском',
-            'Сильно колеблющиеся акции',
-            'Нерегулируемые инструменты',
-            'Проекты без опыта и истории',
+            'Ein diversifiziertes Portfolio mit minimalem Risiko',
+            'Stark schwankende Aktien',
+            'Nicht regulierte Instrumente',
+            'Projekte ohne Erfahrung und Historie',
         ],
     },
     {
-        label: 'Какой принцип помогает уменьшить риски при формировании капитала?',
+        label: 'Welches Prinzip hilft, Risiken beim Vermögensaufbau zu verringern?',
         answers: [
-            'Распределение средств по разным направлениям',
-            'Вложение всех средств в один актив',
-            'Опираться на единственный источник информации',
-            'Полное игнорирование рыночных новостей',
+            'Verteilung der Mittel auf verschiedene Bereiche',
+            'Das gesamte Kapital in einen einzigen Vermögenswert investieren',
+            'Sich auf nur eine Informationsquelle verlassen',
+            'Marktnachrichten völlig ignorieren',
         ],
     },
     {
-        label: 'Что может напрямую влиять на уровень доходности вложений?',
+        label: 'Was kann den Ertrag von Investitionen direkt beeinflussen?',
         answers: [
-            'Общая ситуация на рынке и в экономике',
-            'Оформление интернет-страницы',
-            'Название продукта',
-            'Возраст инвестора',
+            'Die allgemeine Marktlage und wirtschaftliche Situation',
+            'Das Design einer Internetseite',
+            'Der Produktname',
+            'Das Alter des Investors',
         ],
     },
     {
-        label: 'Какое понятие отражает высокий финансовый результат?',
+        label: 'Welcher Begriff beschreibt ein hohes finanzielles Ergebnis?',
         answers: [
-            'Высокая доходность',
-            'Минимальные поступления',
-            'Частичный выход',
-            'Первоначальный взнос',
+            'Hohe Rendite',
+            'Minimale Einnahmen',
+            'Teilweiser Ausstieg',
+            'Ersteinzahlung',
         ],
     },
 ];
+
 
 
 
@@ -59,8 +60,12 @@ const startStep = {
     <div class="quiz-content">
         <div class="content">
             <img class="quiz-image" src="assets/custom/images/bg1.png"/>
-            <h2 class="title">Интерактивное обучение инвестициям</h2>
-            <h5 class="text">Пошаговое обучение инвестированию — от первых знаний до уверенной работы на рынке. Программа раскрывает ключевые основы и формирует практические умения, необходимые для успешного развития в сфере инвестиций.</h5>
+            <h2 class="title">Interaktives Investment-Training</h2>
+            <h5 class="text">
+                Schritt-für-Schritt-Ausbildung im Investieren – von den ersten Kenntnissen bis zur sicheren Arbeit am Markt. 
+                Das Programm vermittelt die wichtigsten Grundlagen und entwickelt praktische Fähigkeiten, 
+                die für eine erfolgreiche Karriere im Bereich der Investitionen erforderlich sind.
+            </h5>
             <div class="contact-wrapper">
                 <div class="my-3 icons-wrapper">
                     <span
@@ -73,10 +78,11 @@ const startStep = {
                     </p>
                 </div>
             </div>
-            <button class="btn btn-primary w-100 py-3 first-button" data-action="startQuiz">Начать обучение</button>
+            <button class="btn btn-primary w-100 py-3 first-button" data-action="startQuiz">Training starten</button>
         </div>
     </div>
 </div>
+
 
 
 
@@ -176,30 +182,32 @@ const questionsStep = {
 const finalStep = {
     render: () => {
         $container.innerHTML = `
-     <div class="container quiz-wrapper">
+    <div class="container quiz-wrapper">
     <div class="row quiz-content form-content">
         <div class="col-lg-6 col-md-6 col-sm-12 form-block">
             <form id="quiz-form">
-                <h2 class="title" style="color: #fff;">Почти готово! Сохрани свои результаты</h2>
-                <p class="text" style="color: #fff; margin-bottom: 20px;">Заполни форму, чтобы оценить свои знания в области инвестиций, финансового планирования и управления капиталом.</p>
+                <h2 class="title" style="color: #fff;">Fast geschafft! Speichere deine Ergebnisse</h2>
+                <p class="text" style="color: #fff; margin-bottom: 20px;">
+                    Fülle das Formular aus, um dein Wissen in den Bereichen Investitionen, Finanzplanung und Kapitalmanagement zu bewerten.
+                </p>
                 
-                <input class="form-control" name="name" type="text" placeholder="Имя и фамилия" required>
-                <input class="form-control" name="email" type="email" placeholder="Электронная почта" required>
-                <input class="form-control" name="phone" type="tel" placeholder="Номер телефона" required>
+                <input class="form-control" name="name" type="text" placeholder="Vor- und Nachname" required>
+                <input class="form-control" name="email" type="email" placeholder="E-Mail-Adresse" required>
+                <input class="form-control" name="phone" type="tel" placeholder="Telefonnummer" required>
 
                 <div class="checkbox" style="color: #fff;">
                     <input type="checkbox" required id="privacyPolicy">
                     <label for="privacyPolicy">
-                        Я принимаю
-                        <a class="form-link" href="cookie-policy.html" target="_blank" style="color: #fff; text-decoration: underline;">Политику использования файлов cookie</a>,
-                        <a class="form-link" href="privacy-policy.html" target="_blank" style="color: #fff; text-decoration: underline;">Политику конфиденциальности</a> и
-                        <a class="form-link" href="terms-of-use.html" target="_blank" style="color: #fff; text-decoration: underline;">Условия использования</a> и согласен на обработку моих персональных данных.
+                        Ich akzeptiere
+                        <a class="form-link" href="cookie-policy.html" target="_blank" style="color: #fff; text-decoration: underline;">die Cookie-Richtlinie</a>,
+                        <a class="form-link" href="privacy-policy.html" target="_blank" style="color: #fff; text-decoration: underline;">die Datenschutzrichtlinie</a> und
+                        <a class="form-link" href="terms-of-use.html" target="_blank" style="color: #fff; text-decoration: underline;">die Nutzungsbedingungen</a> und stimme der Verarbeitung meiner personenbezogenen Daten zu.
                     </label>
                 </div>
 
                 <div class="checkbox" style="color: #fff;">
                     <input type="checkbox" id="newsletter" checked>
-                    <label for="newsletter">Я хочу получать эксклюзивные предложения по электронной почте.</label>
+                    <label for="newsletter">Ich möchte exklusive Angebote per E-Mail erhalten.</label>
                 </div>
 
                 ${Object.keys(quiz.answers)
@@ -209,11 +217,12 @@ const finalStep = {
                     )
                     .join('')}
 
-                <button type="submit" class="btn btn-primary w-100 py-3 first-button">Отправить</button>
+                <button type="submit" class="btn btn-primary w-100 py-3 first-button">Senden</button>
             </form>
         </div>
     </div>
 </div>
+
 
       `;
 
